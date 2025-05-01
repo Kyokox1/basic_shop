@@ -53,6 +53,7 @@ https://excalidraw.com/#json=NgS62myCPf_OQ34F371We,Vze92btOL1HmO9D_7_ub5A
 ## 🚀 Características del Proyecto
 
 -   **Gestión de Productos**: Añadir, editar y eliminar productos de manera sencilla.
+-   **Interfaz de Usuario**: Diseño limpio y funcional.
 -   **Gestión de Categorías**: Organizar productos en diferentes categorías.
 -   **Mensajes de Alerta**: Notificaciones para informar sobre el éxito o error de las operaciones.
 
@@ -74,5 +75,3 @@ https://excalidraw.com/#json=NgS62myCPf_OQ34F371We,Vze92btOL1HmO9D_7_ub5A
 4. Accede a `index.php` en tu navegador para comenzar a usar la aplicación.
 
 ---
-# basic_shop
-# basic_shop
