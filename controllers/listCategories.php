@@ -6,7 +6,8 @@ include_once "../models/Product.php";
 $category=new Category;
 $categories=$category->getCategories();
 
-$product= new Product;
+$products= new Product;
+$product= $products->getProducts();
 
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
@@ -17,14 +18,23 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     $urlImage=$_POST["image"];
     $idCategory=$_POST["category"];
 
-    if($product->addProduct($name,$desc,$price,$stock,$urlImage,$idCategory)){
+    //Busca productos con el mismo nombre, si existe te manda un mensaje de error
+    foreach ($product as $row) {
+        if(strtolower($name)==strtolower($row["name"])){
+            header("Location: listProducts.php?success=0&message=Nombre%20Producto%20ya%20Existe");
+            exit;
+        }
+    }
+    
+    //verifica si agrego el producto, si se agrega te manda un mensaje de exito
+    if($products->addProduct($name,$desc,$price,$stock,$urlImage,$idCategory)){
         header("Location: listProducts.php?success=1&message=Producto%20agregado%20correctamente");
         // exit();
     } else {
         header("Location: listProducts.php?success=0&message=No%20se%20pudo%20agregar%20el%20producto");
 
     }
-    exit();
+    exit;
 }
 
 

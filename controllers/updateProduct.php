@@ -11,7 +11,7 @@ if($idProduct <= 0){
     die("ID de producto inválido");
 }
 
-// Obtener producto
+// Obtener producto por id
 $product = $prod->getProductById($idProduct);
 if(!$product){
     die("Producto no encontrado");
@@ -31,6 +31,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $stock = $_POST["stock"] ?? 0;
     $urlImage = $_POST["image"] ?? '';
     $idCategory = $_POST["category"] ?? 0;
+
+    //busca si hay algun producto con el mismo nombre
+    foreach ($prod->getProducts() as $row) {
+        if(strtolower($name)==strtolower($row["name"])){
+            header("Location: listProducts.php?success=0&message=Nombre%20Producto%20ya%20Existe");
+            exit;
+        }
+    }
 
     if($prod->updateProduct($idProduct, $name, $desc, $price, $stock, $urlImage, $idCategory)){
         header("Location: listProducts.php?success=1&message=Producto%20actualizado%20correctamente");
