@@ -30,6 +30,7 @@ https://excalidraw.com/#json=NgS62myCPf_OQ34F371We,Vze92btOL1HmO9D_7_ub5A
 ├── public                      # Archivos públicos, como estilos y imágenes
 │ ├── styles                    # Contiene archivos CSS para el estilo de la aplicación
 │ │ ├── addProduct.css          # Estilos para el formulario de añadir producto
+| | ├── alertMessage.css        # Estilos para el mensaje de confimacion o error al (CRUD) productos
 │ │ ├── deleteProduct.css       # Estilos para mensajes de alerta de eliminación
 │ │ ├── editProduct.css         # Estilos para el formulario de edición de productos
 │ │ ├── manageProduct.css       # Estilos para la gestión de productos

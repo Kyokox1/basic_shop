@@ -1,0 +1,94 @@
+/* Estilos para los mensajes de alerta */
+.alert {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 25px;
+	width: 90%;
+	max-width: 400px;
+	border-radius: 8px;
+	font-family: 'Segoe UI', sans-serif;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	z-index: 10000;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.alert.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.alert-success {
+	background-color: #f0f9eb;
+	color: #1d6628;
+	border-top: 4px solid #4caf50;
+}
+
+.alert-error {
+	background-color: #fde8e8;
+	color: #b71c1c;
+	border-top: 4px solid #f44336;
+}
+
+.alert-icon {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+}
+
+.alert-message {
+	margin-bottom: 20px;
+	font-size: 1.1rem;
+	line-height: 1.5;
+}
+
+.alert-button {
+	padding: 10px 25px;
+	border: none;
+	border-radius: 4px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.alert-success .alert-button {
+	background-color: #4caf50;
+	color: white;
+}
+
+.alert-error .alert-button {
+	background-color: #f44336;
+	color: white;
+}
+
+.alert-button:hover {
+	opacity: 0.9;
+}
+
+.alert-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.alert-overlay.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+body {
+	position: relative;
+}

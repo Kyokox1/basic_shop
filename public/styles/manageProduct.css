@@ -1,4 +1,4 @@
-/* Estilos para los mensajes de alerta */
+/* Estilos para los mensajes de alerta
 .alert {
 	position: fixed !important;
 	top: 50% !important;
@@ -91,7 +91,7 @@
 
 body {
 	position: relative;
-}
+} */
 
 /* Estilos adicionales para la gestión de productos */
 .main__header {

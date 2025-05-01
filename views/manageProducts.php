@@ -6,6 +6,7 @@
     <title>Gestión de Productos</title>
     <link rel="icon" href="../public/images/logo.png" type="image/png" />
     <link rel="stylesheet" href="../public/styles/product.css">
+    <link rel="stylesheet" href="../public/styles/alertMessage.css">
     <link rel="stylesheet" href="../public/styles/manageProduct.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
