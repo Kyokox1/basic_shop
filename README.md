@@ -70,8 +70,8 @@ https://excalidraw.com/#json=NgS62myCPf_OQ34F371We,Vze92btOL1HmO9D_7_ub5A
 ## 🛠 Instalación
 
 1. Clona el repositorio o descarga los archivos.
-2. Importa el archivo `backup.txt` en tu base de datos MySQL.
-3. Configura la conexión a la base de datos en `Connection.php` si es necesario.
+2. Importa el archivo `backup.sql` en tu base de datos MySQL.
+3. Configura la conexión a la base de datos en `models/Connection.php` si es necesario.
 4. Accede a `index.php` en tu navegador para comenzar a usar la aplicación.
 
 ---
